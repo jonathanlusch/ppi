@@ -18,7 +18,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Livro | BookIFFar</title>
+    <title>Registro de usuário | BookIFFar</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -120,7 +120,7 @@
     <!-- end of navigation -->
 
     <br><br><br><br><br><br><br><br>
-    <div class="checkbox">
+    <div class="user-page">
         <div class="nav-item">
             <h2 class="container" id="nav-item">Cadastro de usuário:</h2>
             <br>
@@ -128,67 +128,42 @@
                 <div class="center">
                     <form class="features">
                         <fieldset>
-                            <input type="testimonial-text" placeholder="Código de registro" required />
-                            <input type="testimonial-text" placeholder="Tipo de acervo" required /><br>
-                            <textarea class="form-control-textarea" placeholder="Classificação CDU"></textarea>
+                            <input type="testimonial-text" placeholder="Nome" required />
+                            <input type="testimonial-text" placeholder="Sobrenome" required /><br>
                         </fieldset>
                                 <br>
-                                <h2 class="features" id="content">Cadastro de obras no acervo:</h2><br>
                                 <form class="checkbox">
                                 <fieldset>
                                 <div class="select-area">
                                 <div class="select">
                                     <select name="format" id="format">
-                                    <option selected disabled>Selecione o tipe de obra</option>
-                                            <option value="livro">Livro</option>
-                                            <option value="dvd">DVD</option>
-                                            <option value="revista">Revista</option>
-                                    </select>
-                                </div> 
-                                <br>
+                                        <option selected disabled>Selecione o curso</option>
+                                            <option value="info">Téc. Integrado em Informática</option>
+                                            <option value="adm">Téc. Integrado em Administração</option>
+                                            <option value="agro">Téc. Integrado em Agropecuária</option>
+                                            <option value="mat">Lic. em Matemática</option>
+                                            <option value="cienciacomp">Bacharel. Ciência da computação</option>
+                                            <option value="medvet">Bacharel. Medicina Veterinária</option>
+                                            <option value="agrosubs">Téc. Agropecuária Subsequente</option>
+                                        </select>
                                 </div>
-                                    <input type="testimonial-text" placeholder="Número de série ISBN" required/>
-                                    <input type="testimonial-text" placeholder="Autor(es)" required/>
-                                    <input type="testimonial-text" placeholder="Tradutor(es)" required/>
-                                    <input type="testimonial-text" placeholder="Título da obra" required/>
-                                    <input type="testimonial-text" placeholder="Subtítulo da obra" required/>
-                                    <input type="testimonial-text" placeholder="Edição" required/>
-                                    <br><br>
-                                <div>
-                                    <label for="testimonial-text" class="format">Ano de publicaçao</label>
-                                    <input type="date" id="anoPubl" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-green-500 focus:border-green-500 block w-full p-2.5 drop-shadow  " placeholder="2022704477" required="">
-                                </div> 
-                                <br><br>                              
-                                    <input type="testimonial-text" placeholder="Lugar" required/>
-                                    <input type="testimonial-text" placeholder="Editora" required/>
-                                <div class="select-area">
-                                    <br>
                                 <div class="select">
-                                        <br>
-                                        <select name="format" id="format">
-                                        <option selected disabled>Biblioteca que pertence a obra</option>
-                                        <br>
-                                            <option value="fw">Campus Fred. Westphalen</option>
-                                            <option value="alegrete">Campus Alegrete</option>                                            
-                                            <option value="jaguari">Campus Jaguari</option>
-                                            <option value="julio">Campus Júlio de Castilhos</option>
-                                            <option value="panambi">Campus Panambi</option>
-                                            <option value="santarosa">Campus Santa Rosa</option>
-                                            <option value="santoangelo">Campus Santo Ângelo</option>
-                                            <option value="santoaugusto">Campus Santo Augusto</option>
-                                            <option value="saoborja">Campus São Borja</option>
-                                            <option value="saovicente">Campus São Vicente do Sul</option>
-                                            <option value="uruguaiana">Campus Avançado Uruguaiana</option>
+                                    <select name="format" id="format">
+                                        <option selected disabled>Categoria</option>
+                                            <option value="servidor">Servidor</option>
+                                            <option value="aluno">Aluno</option>
+                                            <option value="moderador">Moderador</option>
                                         </select>
                                 </div> 
-                                </div>
-                                    <input type="testimonial-text" placeholder="Descrição física" required />
-                                    <input type="testimonial-text" placeholder="Classficação" required />
-                                    <input type="testimonial-text" placeholder="Palavras-chave" required />
-                                    <input type="url" placeholder="Link livro eletrônico" required />
-                                    <input type="testimonial-text" placeholder="Número do livro" required />
-                                    <textarea class="form-control-textarea" placeholder="Resumo da obra"></textarea>
                                 <br>
+                                </div>
+                                    <input type="testimonial-text" placeholder="Matrícula/SIAP" required/>
+                                    <input type="testimonial-text" placeholder="CPF" required/>
+                                    <input type="testimonial-text" placeholder="E-mail" required/>
+                                    <input type="testimonial-text" placeholder="Senha" required/>
+                                    <br><br>
+                                <h4 class="center" id="nav-item">Foto de perfil:</h4>
+                                <br>                                
                                 <div class="file-button">
                                     <input type="file">
                                 </div>
